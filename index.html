@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanishq TRIKA Launch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://github.com/MonsterOO9/Project/raw/2/backgroung%20image%20for%20web%20page.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    header, section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header {
+      background-color: rgba(212, 175, 55, 0.9);
+      color: white;
+    }
+    .why-trika {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      text-align: center;
+    }
+    .why-trika-text {
+      max-width: 500px;
+    }
+    .why-trika-text ul {
+      list-style-type: square;
+      padding-left: 20px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #5c1e1e;
+    }
+    .why-trika img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+    }
+    .product-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .product {
+      width: 45%;
+      max-width: 400px;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .product h3 {
+      margin: 12px 0 8px;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .product p {
+      font-size: 1em;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      .product {
+        width: 90%;
+      }
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .team-member {
+      width: 150px;
+      text-align: center;
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 12px;
+      border: none;
+    }
+    .team-member h4,
+    .team-member p {
+      margin: 10px 0 0;
+      color: #5c1e1e;
+    }
+    .future-goals {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .future-goals img {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 12px;
+    }
+    .swot-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .square {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 410px;
+      height: 400px;
+      column-gap: 40px;
+    }
+    .square img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .swot-details {
+      flex: 1;
+      min-width: 280px;
+      text-align: left;
+    }
+    .swot-details ul {
+      list-style-type: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+    .swot-details li {
+      margin-bottom: 10px;
+    }
+    .contact-section {
+      background-color: rgba(243, 232, 223, 0.9);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact-section h2 {
+      color: #5c1e1e;
+      margin-bottom: 20px;
+    }
+    .contact-section p {
+      color: #5c1e1e;
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    .contact-section img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: rgba(51, 51, 51, 0.9);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h2 {
+      color: #d4af37;
+    }
+    .who-are-we {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    .who-are-we-text {
+      max-width: 500px;
+      text-align: left;
+    }
+    .who-are-we video {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+    }
+    .stp-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 60px 20px;
+    }
+    .stp-container img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .stp-arrow {
+      max-width: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TRIKA by Tanishq</h1>
+  </header>
+
+  <section>
+    <h2>Who Are We?</h2>
+    <div class="who-are-we">
+      <div class="who-are-we-text">
+        <p><strong>TRIKA</strong> is the new frontier of luxury technology, crafted with the timeless elegance of <strong>Tanishq</strong>. We are more than a smartwatch — we are a symbol of prestige, precision, and progressive design.</p>
+        <p>Our vision is to blend the legacy of craftsmanship with the pulse of modern innovation, offering timepieces that are both iconic and intelligent.</p>
+        <p>Whether in the boardroom, gym, or gala — <strong>TRIKA</strong> moves with your rhythm and style.</p>
+      </div>
+      <video controls>
+        <source src="https://github.com/MonsterOO9/Project/raw/2/who%20are%20we.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why TRIKA?</h2>
+    <div class="why-trika">
+      <div class="why-trika-text">
+        <ul>
+          <li><strong>✨ Iconic Legacy:</strong> From the house of Tanishq, a name that defines luxury in India.</li>
+          <li><strong>⚖ Industry Pioneer:</strong> Years of craftsmanship, now with smart tech fusion.</li>
+          <li><strong>🌟 Strong Brand Trust:</strong> Loved and worn by millions — your trust, our pride.</li>
+          <li><strong>🌚 Diverse Portfolio:</strong> A smartwatch for every story and every style.</li>
+          <li><strong>🏢 Pan-India Presence:</strong> Widest retail network for seamless experience.</li>
+          <li><strong>🔄 Future-Ready:</strong> Perfect synergy between tradition and innovation.</li>
+        </ul>
+      </div>
+      <img src="https://github.com/MonsterOO9/Project/raw/2/why.png" alt="Why TRIKA?">
+    </div>
+  </section>
+
+
+
+  <section style="display: flex; flex-direction: column; align-items: center;">
+    <h2 style="text-align: center;">Luxury Smartwatches — Shine Through Time</h2>
+   <!-- Product 1: EXCLUSIVE - ₹459,999 (Image) -->
+<div class="product" style="justify-content: center;">
+  <img src="https://github.com/MonsterOO9/Project/raw/2/Exclusive.jpeg" alt="EXCLUSIVE ₹459,999" style="width: 100%; border-radius: 4px;">
+  <h3>EXCLUSIVE</h3>
+  <p>Starting @ ₹459,999</p>
+</div>
+
+<!-- Product 2: CLASSIC - ₹239,999 (Video) -->
+<div class="product" style="justify-content: center;">
+  <video controls muted autoplay loop style="width: 100%; border-radius: 4px;">
+    <source src="https://github.com/MonsterOO9/Project/raw/2/239999.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3>CLASSIC</h3>
+  <p>Starting @ ₹239,999</p>
+</div>
+
+<!-- Product 3: RAAYA - ₹119,999 (Video) -->
+<div class="product">
+  <video controls muted autoplay loop style="width: 100%; border-radius: 4px;">
+    <source src="https://github.com/MonsterOO9/Project/raw/2/119999.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3>RAAYA</h3>
+  <p>Starting @ ₹119,999</p>
+</div>
+
+<!-- Product 4: RAAYA - ₹64,950 (Video) -->
+<div class="product">
+  <video controls muted autoplay loop style="width: 100%; border-radius: 4px;">
+    <source src="https://github.com/MonsterOO9/Project/raw/2/64950.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3>RAAYA</h3>
+  <p>Starting @ ₹64,950</p>
+</div>
+
+<!-- Product 5: AMEYA - ₹39,999 (Video) -->
+<div class="product">
+  <video controls muted autoplay loop style="width: 100%; border-radius: 4px;">
+    <source src="https://github.com/MonsterOO9/Project/raw/2/39999.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3>AMEYA</h3>
+  <p>Starting @ ₹39,999</p>
+</div>
+
+<!-- Product 6: AMEYA - ₹54,999 (Image) -->
+<div class="product">
+  <img src="https://github.com/MonsterOO9/Project/raw/2/54999.png" alt="AMEYA ₹54,999" style="width: 100%; border-radius: 4px;">
+  <h3>AMEYA</h3>
+  <p>Starting @ ₹54,999</p>
+</div>
+
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Marketing</h2>
+    <p>Billboards, newspaper ads, magazine covers, social media, influencer shoutouts — we shine across every channel.</p>
+    <p>From screen → to store → to you. Your wrist is just a click away.</p>
+  </section>
+
+  <section>
+    <h2>Business Strategy</h2>
+    <h3>STP Analysis</h3>
+    <p>Segmentation | Targeting | Positioning</p>
+
+    <h3>SWOT Analysis</h3>
+    <div class="swot-container">
+  <div class="square">
+    <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/S.png" alt="Strengths">
+    <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/W.png" alt="Weaknesses">
+    <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/O.png" alt="Opportunities">
+    <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/T.png" alt="Threats">
+  </div>
+  
+  <div class="swot-details">
+    <ul>
+      <li><strong>Strengths:</strong> Brand Heritage & Legacy, High-Quality Craftsmanship</li>
+      <li><strong>Weaknesses:</strong> Counterfeit Market, Long Purchase Cycle</li>
+      <li><strong>Opportunities:</strong> Festive Campaigns, Global Appeal</li>
+      <li><strong>Threats:</strong> Intense Competition, Changing Consumer Preferences</li>
+    </ul>
+  </div>
+</div>
+  </section>
+
+  <section>
+    <h2>Launch Event</h2>
+    <div class="future-goals">
+      <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Launch%20Event1.png" alt="Launch Photo 1">
+      <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Launch%20Event%202.png" alt="Launch Photo 2">
+      <p><strong>Date:</strong> 29th October, 2024</p>
+      <p><strong>Location:</strong> Ground Floor, Store No. G-12, Jio World Drive,<br>
+      Bandra Kurla Complex, Bandra East, Mumbai - 400051, Maharashtra, India</p>
+      <p><strong>Chief Guest:</strong> Mr. Shantanu Naidu – General Manager</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Future Goals</h2>
+    <div class="future-goals">
+      <ul style="text-align: left; max-width: 700px; line-height: 1.8; font-size: 1.1rem;">
+        <li><strong>Launch Smart Jewelry Ecosystem:</strong> Imagine a world where your accessories aren’t just ornamental — they’re intelligent. With AI-powered rings, bracelets, and pendants, TRIKA will create a new definition of wearable elegance.</li>
+        <li><strong>Women’s Safety Innovation:</strong> Beauty with a purpose. Our future products will embed discreet safety alerts, giving every woman peace of mind without compromising on style.</li>
+        <li><strong>Gold-as-a-Service (GaaS):</strong> Luxury meets flexibility. A subscription-based model lets customers experience new designs, trade-in old ones, and own timeless beauty their way.</li>
+        <li><strong>Global Expansion:</strong> From the heart of India to the fashion capitals of the world — we aim to carry our heritage to Milan’s runways, Tokyo’s tech stores, and New York’s high streets.</li>
+      </ul>
+      <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Future%20Goals.png" alt="Future Goals - Smart Jewelry Ecosystem">
+    </div>
+  </section>
+
+  <section>
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Ayushi%20Rathod.png" alt="Ayushi Rathod">
+        <h4>Ayushi Rathod</h4>
+        <p>Finance Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Moksh%20Gangar.png" alt="Moksh Gangar">
+        <h4>Moksh Gangar</h4>
+        <p>Team Leader</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Viha%20Gajaria.png" alt="Viha Gajaria">
+        <h4>Viha Gajaria</h4>
+        <p>Marketing Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Nishi%20Mehta.png" alt="Nishi Mehta">
+        <h4>Nishi Mehta</h4>
+        <p>Creative Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Soumya%20Dubey.png" alt="Soumya Dubey">
+        <h4>Soumya Dubey</h4>
+        <p>Product Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Sanshkriti%20Gupta.png" alt="Sanshkriti Gupta">
+        <h4>Sanshkriti Gupta</h4>
+        <p>Brand Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Bhakti%20Narkar.png" alt="Bhakti Narkar">
+        <h4>Bhakti Narkar</h4>
+        <p>Technology Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Shraddha%20Naik.png" alt="Shraddha Naik">
+        <h4>Shraddha Naik</h4>
+        <p>Research Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Priyansh%20Bauva.png" alt="Priyansh Bauva">
+        <h4>Priyansh Bauva</h4>
+        <p>Pricing Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact</h2>
+    <img src="https://raw.githubusercontent.com/MonsterOO9/Project/7c02249f9899875103972f10cda57b0b1011cc86/Contact.png" alt="Contact Logo">
+    <p>1800-266-0123</p>
+    <p>care@trika.co.in</p>
+    <p>Customer Retail Portal</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TRIKA by Tanishq | <a href="https://trika.com" style="color: #fff;">Visit trika.com</a></p>
+  </footer>
+</body>
+</html>  
